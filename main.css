@@ -1,0 +1,23 @@
+
+* {
+    border: solid 1px;
+}
+
+.nav-bar {
+    list-style: none;
+    height: 2.5em;
+    margin: 0px;
+    padding: 10px;
+    
+}
+
+.nav-bar li {
+    float: right;
+}
+.nav-bar li a {
+    display: block
+}
+
+
+
+
