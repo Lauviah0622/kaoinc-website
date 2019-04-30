@@ -1,22 +1,99 @@
+:root {
+    --desktops-max-width: 1200px;
+    --tablets-max-width:;
+    --Mobiles-min-width:;
+}
+
+.clearfix::after {
+    content: ''
+}
+
+html {
+    font-size: 16px;
+}
+
 
 * {
     border: solid 1px;
 }
 
+
+/* nav */
+
+nav {
+    
+}
+
+.nav-box{
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+}
+
+/* .nav-box::after {
+    content: "";
+    display: block;
+    clear: both;
+} */
+
+.nav-logo-box {
+}
+
+.nav-logo {
+    height: 5em;
+    width: 5em;
+}
+.nav-bar-box {
+    margin-left: auto;
+    display: flex;
+    align-items: center
+}
+
 .nav-bar {
     list-style: none;
-    height: 2.5em;
     margin: 0px;
-    padding: 10px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     
 }
 
 .nav-bar li {
-    float: right;
+    margin: 12px;
 }
 .nav-bar li a {
-    display: block
 }
+
+/* hero */
+
+.hero-box .hero-img-box {
+    
+    width: 100vw;
+    height: 700px;
+    background-image: url(https://placeimg.com/300/200/animals);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.hero-content-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-content-box img {
+    height: 200px;
+    width: 400px;
+}
+
+.hero-box .previous-img {
+
+}
+
 
 
 
