@@ -4,9 +4,6 @@
     --Mobiles-min-width:;
 }
 
-.clearfix::after {
-    content: ''
-}
 
 html {
     font-size: 16px;
@@ -14,7 +11,7 @@ html {
 
 
 * {
-    border: solid 1px;
+    /* border: solid 1px; */
 }
 
 
@@ -68,31 +65,119 @@ nav {
 
 /* hero */
 
-.hero-box .hero-img-box {
-    
-    width: 100vw;
+.hero {
+    position: relative;
     height: 700px;
-    background-image: url(https://placeimg.com/300/200/animals);
-    background-repeat: no-repeat; 
-    background-size: cover;
-    background-position: center bottom;
+    overflow: hidden;
+    background: #000;
 }
 
-.hero-content-box {
+
+
+.hero-logo {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.hero-content-box img {
+.hero-logo img {
     height: 200px;
     width: 400px;
 }
 
-.hero-box .previous-img {
+.hero-img-box .hero-img {
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
+
+#img1 {
+    background-image: url(./img/hero1.png);
+}
+#img2 {
+    background-image: url(./img/hero2.jpg);
+}
+#img3 {
+    background-image: url(./img/hero3.jpg);
+}
+#img4 {
+    background-image: url(./img/hero4.png);
+}
+
+.hero-slide-button {
+    position: absolute;
+    height: 100%;
+    width: 35vw;
+    transition-duration: 500ms
+    
+}
+
+
+#previous-button {
+    background: linear-gradient(90deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 35%, rgba(255,255,255,0) 100%);;
+    left: 0;
+    opacity: 0;
+    
+}
+
+#previous-button:hover {
+    opacity: 1;
+}
+
+#next-button {
+    background: linear-gradient(270deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 35%, rgba(255,255,255,0) 100%);
+    right: 0%;
+    opacity: 0;
+}
+
+#next-button:hover {
+    opacity: 1;
+}
+
+.hero-indicator-box {
+    position: absolute;
+    display: flex;
+    margin-bottom: 10px;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.hero-indicator {
+    margin: 10px 5px;
+    width: 30px;
+    height: 3px;
+    border: none;
+    background-color: #fff;
+    opacity: 0.5;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+
+}
+
+.hero-indicator:hover {
+    width: 40px;
+}
+
+.hero-indicator-click{
+
+}
+
+.hero-indicator-on {
+    opacity: 1;
+    width: 40px;
+
+}
+
+
+
+/* 在不同螢幕尺寸不同漸層的顏色 */
+
+
 
 
 
