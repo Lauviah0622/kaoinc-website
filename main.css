@@ -287,6 +287,7 @@ nav {
 .artist {
 }
 
+
 .artist::before {
     position: absolute;
     content: '';
@@ -303,20 +304,27 @@ nav {
     z-index: 100;
 }
 
+.artist .inner-box {
+    position: relative;
+    max-width: var(--desktops-max-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 100px;
+    overflow: hidden;
+
+}
+
+.artist .character-box {
+    position: relative;
+}
 
 
 .dela-box {
     padding-top: 100px;
-    height: 700px;
     background-color: rgb(245 ,219, 206);
 }
 
 
-.artist .inner-box {
-    max-width: var(--desktops-max-width);
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .artist .title {
 
@@ -329,6 +337,8 @@ nav {
 }
 
 .artist .content-box {
+    position: relative;
+    /* left: -100px; */
     width: 440px;
     color: #ffffff;
     font-family: 'Noto Serif TC', serif;
@@ -336,6 +346,9 @@ nav {
     line-height: 40px;
     font-weight: 700;
 }
+
+
+
 .dela-box .title {
     background: repeating-linear-gradient(-45deg,
         rgb(245 ,219, 206),
@@ -345,8 +358,66 @@ nav {
     
 }
 
+
+.dela-box .intro {
+    position: relative;
+    left: 0%;
+}
+
+.artist .img-box {
+    position: absolute;
+    height: 650px;
+    width: 650px;
+    bottom: 0px;
+}
+
+.dela-box .img-box {
+    right: 0;
+
+}
+
+.artist .artist-img {
+    position: absolute;
+    background-image: url(./img/dela.png);
+    background-size: cover;
+    background-position: 50%;
+    height: 100%;
+    width: 100%;   
+    z-index: 1;
+}
+
 .artist .artist-name {
-    background-image: url()
+    position: absolute;
+    bottom: 0px;
+    color: #ffffff;
+    font-size: 300px;
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 600;
+    transform: matrix(0.5, 0, 0, 1, 0, 0);
+    bottom: 20px
+}
+
+.name-left {
+    left: -220px;
+    background-origin: left bottom;
+}
+
+.name-right {
+    right: -95px;
+    background-origin: right bottom;
+}
+
+.artist-album {
+    border: 1px solid #000;
+    width: 100%;
+    height: 100px;
+}
+
+.album-img {
+    display: none;
+}
+.album-title {
+
 }
 
 
