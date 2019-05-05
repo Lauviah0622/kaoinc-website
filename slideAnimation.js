@@ -21,12 +21,12 @@ function animate({
 
 }
 
-function slideJS(from, to, DOMobject) {
+function slideJS(from, to, DOMobject, duration = 1000) {
     //from & to is 'number%'
     if (from === to) return 'Error you don\'t need move'
     DOMobject.style.left = `${from}%`
     animate({
-        duration: 1000,
+        duration: duration,
         timing: powerEaseInOut,
         render: (progress) => DOMobject.style.left = `${from - (from - to) * progress}%`
     });

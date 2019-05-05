@@ -1,7 +1,7 @@
 :root {
     --desktops-max-width: 1200px;
-    --tablets-max-width:;
-    --Mobiles-min-width:;
+    --tablets-max-width: ;
+    --Mobiles-min-width: ;
 }
 
 
@@ -18,11 +18,9 @@ html {
 
 /* nav */
 
-nav {
-    
-}
+nav {}
 
-.nav-box{
+.nav-box {
     max-width: var(--desktops-max-width);
     margin-right: auto;
     margin-left: auto;
@@ -35,13 +33,13 @@ nav {
     clear: both;
 } */
 
-.nav-logo-box {
-}
+.nav-logo-box {}
 
 .nav-logo {
     height: 5em;
     width: 5em;
 }
+
 .nav-bar-box {
     margin-left: auto;
     display: flex;
@@ -55,14 +53,14 @@ nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    
+
 }
 
 .nav-bar li {
     margin: 12px;
 }
-.nav-bar li a {
-}
+
+.nav-bar li a {}
 
 /* hero */
 .hero {
@@ -87,14 +85,12 @@ nav {
     background-color: rgb(0, 0, 0);
     background-image: url(./img/border.svg);
     /* background-size: contain; */
-    bottom: 0px;
-    transform: rotate(2deg) translate(-20%,3.5vh) ;
-    z-index: 100;
-} */
+bottom: 0px;
+transform: rotate(2deg) translate(-20%, 3.5vh);
+z-index: 100;
+}
 
-
-
-.hero-logo {
+*/ .hero-logo {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -118,12 +114,15 @@ nav {
 #img1 {
     background-image: url(./img/hero1.png);
 }
+
 #img2 {
     background-image: url(./img/hero2.jpg);
 }
+
 #img3 {
     background-image: url(./img/hero3.jpg);
 }
+
 #img4 {
     background-image: url(./img/hero4.png);
 }
@@ -134,15 +133,15 @@ nav {
     height: 100%;
     width: 35vw;
     transition-duration: 500ms
-    
 }
 
 
 #previous-button {
-    background: linear-gradient(90deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 35%, rgba(255,255,255,0) 100%);;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 35%, rgba(255, 255, 255, 0) 100%);
+    ;
     left: 0;
     opacity: 0;
-    
+
 }
 
 #previous-button:hover {
@@ -150,7 +149,7 @@ nav {
 }
 
 #next-button {
-    background: linear-gradient(270deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 35%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 35%, rgba(255, 255, 255, 0) 100%);
     right: 0%;
     opacity: 0;
 }
@@ -184,9 +183,7 @@ nav {
     width: 40px;
 }
 
-.hero-indicator-click{
-
-}
+.hero-indicator-click {}
 
 .hero-indicator-on {
     opacity: 1;
@@ -202,12 +199,12 @@ nav {
 
 .about {
     position: relative;
-    
-    
+
+
 }
 
 
-.about::before  {
+.about::before {
     position: absolute;
     content: '';
     display: block;
@@ -218,7 +215,7 @@ nav {
     background-image: url(./img/border.svg);
     /* background-size: contain; */
     /* bottom: 0px; */
-    transform: rotate(1.5deg) translate(-20%,-3.5vh) ;
+    transform: rotate(1.5deg) translate(-20%, -3.5vh);
     z-index: 100;
 }
 
@@ -241,7 +238,7 @@ nav {
 
 
 .about .background-title {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;  
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     color: antiquewhite;
     position: absolute;
     left: 50%;
@@ -262,13 +259,13 @@ nav {
 
 .about .background-hover {
     position: absolute;
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0) 100%);
     width: 100%;
     height: 30%;
     bottom: 0;
     /* display: none; */
 
-    
+
 }
 
 .about .content {
@@ -284,8 +281,7 @@ nav {
 
 /* artist */
 
-.artist {
-}
+.artist {}
 
 
 .artist::before {
@@ -300,8 +296,18 @@ nav {
     background-image: url(./img/border.svg);
     /* background-size: contain; */
     /* bottom: 0px; */
-    transform: rotate(-1.3deg) translate(-15%,-5.3vh) ;
+    transform: rotate(-1.3deg) translate(-15%, -5.3vh);
     z-index: 100;
+}
+
+
+.artist .character-box {
+    /* height: 800px; */
+    position: relative;
+    padding-top: 100px;
+    margin-top: -6vw;
+
+
 }
 
 .artist .inner-box {
@@ -309,27 +315,17 @@ nav {
     max-width: var(--desktops-max-width);
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 100px;
-    overflow: hidden;
+    padding-bottom: 140px;
 
 }
 
-.artist .character-box {
-    position: relative;
-}
-
-
-.dela-box {
-    padding-top: 100px;
-    background-color: rgb(245 ,219, 206);
-}
 
 
 
 .artist .title {
 
     padding: 10px;
-    color:  #ffffff;
+    color: #ffffff;
     font-size: 40px;
     font-weight: black;
     font-family: 'Noto Serif TC', serif;
@@ -337,44 +333,70 @@ nav {
 }
 
 .artist .content-box {
-    position: relative;
-    /* left: -100px; */
-    width: 440px;
-    color: #ffffff;
     font-family: 'Noto Serif TC', serif;
+    color: #ffffff;
+    width: 440px;
+    overflow: hidden;
+    position: relative;
+    /* left: 30%; */
     font-size: 20px;
     line-height: 40px;
     font-weight: 700;
 }
 
+/* animation point  */
 
-
-.dela-box .title {
-    background: repeating-linear-gradient(-45deg,
-        rgb(245 ,219, 206),
-        rgb(245 ,219, 206) 12px,
-        rgb(239, 203, 186) 12px,
-        rgb(239, 203, 186) 18px);
-    
-}
-
-
-.dela-box .intro {
+.content-box>div {
     position: relative;
-    left: 0%;
+    width: 880px;
+    display: flex;
+    left: 00px;
 }
+
+.content-box-animation {}
+
+
+.character-box .intro {
+    position: relative;
+    width: 440px;
+    padding: 15px;
+    margin: 0px;
+}
+
+
+.intro .album-button {
+    position: relative;
+    font-size: 15px;
+    transition-duration: 1s;
+
+}
+
+.intro .album-button:hover {
+    /* background-color: rgb(256, 256, 256, 0.2); */
+    animation: album-button 0.5s ease-in-out infinite alternate;
+    cursor: pointer;
+}
+
+@keyframes album-button {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 5px;
+    }
+}
+
+
 
 .artist .img-box {
     position: absolute;
     height: 650px;
     width: 650px;
-    bottom: 0px;
-}
-
-.dela-box .img-box {
+    bottom: 3vw;
     right: 0;
-
 }
+
 
 .artist .artist-img {
     position: absolute;
@@ -382,8 +404,7 @@ nav {
     background-size: cover;
     background-position: 50%;
     height: 100%;
-    width: 100%;   
-    z-index: 1;
+    width: 100%;
 }
 
 .artist .artist-name {
@@ -394,7 +415,7 @@ nav {
     font-family: 'Noto Serif TC', serif;
     font-weight: 600;
     transform: matrix(0.5, 0, 0, 1, 0, 0);
-    bottom: 20px
+    bottom: 30px
 }
 
 .name-left {
@@ -407,19 +428,51 @@ nav {
     background-origin: right bottom;
 }
 
+/* albums-box */
+
 .albums-box {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    position: relative;
+    /* display: flex; */
+    /* left: -20%; */
+    /* flex-direction: column; */
+    /* width: 300px; */
+    /* background-color: hsla(69, 0%, 0%, 0.25); */
+    padding: 10px;
+    box-sizing: border-box;
+    height: 400px;
+    overflow: scroll;
+    overflow-x: auto;
+    /* box-shadow: rgb(100, 99, 99) 0px 0px 5px; */
+    /* direction: rtl; */
+
+
+
 }
 
+
+.albums-box::-webkit-scrollbar {
+    width: 5px;
+}
+
+.albums-box::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(245, 245, 245, 0.342);
+
+}
+
+.albums-box::-webkit-scrollbar-track {}
+
+
 .artist-album {
-    border-bottom: 1px solid rgb(239, 203, 186);
-    width: calc(100% - 10px);
-    height: 90px;
+    border-bottom: 1px solid hsl(19, 62.4%, 20.3%);
+    /* width: calc(100% - 10px); */
+    height: 80px;
     display: flex;
     align-items: center;
-    padding: 10px 50px 10px 50px;
+    padding: 10px 20px 10px 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
 
 }
 
@@ -432,17 +485,141 @@ nav {
     /* display: none; */
     height: 100%;
 }
-.album-title {
-    margin: 0px 0px 0px 70px;
+
+.artist-album>div {
+    padding: 10px 0px 10px 20px;
 
 
 }
 
+.artist-album h5 {
+    font-size: 15px;
+    line-height: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.artist-album p {
+    color: hsl(19, 62.4%, 20.3%);
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* indivisual character */
 
 
 
+#dela {
+    background-color: rgb(245, 219, 206);
+}
 
 
 
+#dela .title {
+    background: repeating-linear-gradient(-45deg,
+            rgb(245, 219, 206),
+            rgb(245, 219, 206) 12px,
+            rgb(239, 203, 186) 12px,
+            rgb(239, 203, 186) 18px);
+
+}
+
+#dela .img-box {
+    bottom: 0vw
+}
+
+#dela .name-left {
+    left: -220px;
+}
+
+#dela .name-right {
+    right: -95px;
+}
+
+#softlipa {
+    background-color: rgba(177, 65, 102, 1);
+    position: relative;
+    margin-top: -3vw;
+    clip-path: polygon(0 3vw,
+    100% 0,
+    100% 100%,
+    0 100%);
+    direction: rtl;
+}
 
 
+#softlipa .title {
+    background: repeating-linear-gradient(-45deg,
+            rgb(245, 219, 206),
+            rgb(245, 219, 206) 12px,
+            rgb(239, 203, 186) 12px,
+            rgb(239, 203, 186) 18px);
+
+}
+
+#softlipa .content-box {
+}
+
+#softlipa .img-box {
+    left: 0;
+    right: auto;
+}
+
+
+#gordan {
+    background-color: rgba(85, 92, 104, 1);
+    position: relative;
+    margin-top: -6vw;
+    clip-path: polygon(0 0,
+            100% 6vw,
+            100% 100%,
+            0 100%);
+}
+
+#didilong {
+    background-color: rgba(56, 70, 111, 1);
+    position: relative;
+    top: -6vw;
+    clip-path: polygon(0 0,
+            100% 6vw,
+            100% 100%,
+            0 100%);
+}
+
+#mrgin {
+    background-color: rgb(71, 113, 114);
+    position: relative;
+    top: -6vw;
+    clip-path: polygon(0 0,
+            100% 6vw,
+            100% 100%,
+            0 100%);
+}
+
+#yeemao {
+    background-color: rgba(192, 123, 46, 1);
+    position: relative;
+    top: -6vw;
+    clip-path: polygon(0 0,
+            100% 6vw,
+            100% 100%,
+            0 100%);
+}
+
+#leo {
+    background-color: rgba(31, 136, 67, 1);
+    position: relative;
+    top: -6vw;
+    clip-path: polygon(0 0,
+            100% 6vw,
+            100% 100%,
+            0 100%);
+}
+
+#chunyan {
+
+    background-color: rgb(212, 219, 228);
+}
